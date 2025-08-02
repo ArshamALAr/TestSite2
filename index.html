@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArDev | Home</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom right, #f0f0f0, #e0eaff);
+        }
+
+        header {
+            background-color: #001f3f;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .intro {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #333;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 260px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #001f3f;
+        }
+
+        .card p {
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        footer {
+            background: #001f3f;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to ArDev</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/blog/">Blog</a>
+            <a href="/contact/">Contact</a>
+            <a href="/accounts/login/">Login</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <p class="intro">
+            ArDev is a creative developer team building powerful web and game applications.  
+            Explore our blog, connect with us, or log in to your dashboard.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Our Projects</h3>
+                <p>Check out our latest Python, Django, and Minecraft plugins and tools.</p>
+            </div>
+            <div class="card">
+                <h3>Blog & News</h3>
+                <p>Read tutorials, dev logs, and insights from the ArDev team.</p>
+            </div>
+            <div class="card">
+                <h3>Get in Touch</h3>
+                <p>Have questions? Contact us through our form and we’ll reply quickly.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 ArDev. All rights reserved.
+    </footer>
+</body>
+</html>
